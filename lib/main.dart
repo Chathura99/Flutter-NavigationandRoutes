@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Navigation'),
       // home: const SecondPage(),
+      // routes: <>{
+
+      // },
     );
   }
 }
