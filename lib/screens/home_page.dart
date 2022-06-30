@@ -50,6 +50,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pushNamed("/third");
               },
             ),
+            Text("Go to 4"),
+            IconButton(
+              icon: Icon(
+                Icons.add,
+                color: Colors.blue,
+              ),
+              onPressed: () {
+                //second method to navigate
+                Navigator.of(context).pushNamed("/fourth");
+              },
+            ),
+            Text("Go to 5"),
+            IconButton(
+              icon: Icon(
+                Icons.add,
+                color: Colors.blue,
+              ),
+              onPressed: () {
+                //second method to navigate
+                Navigator.of(context).pushNamed("/fifth");
+              },
+            ),
           ])
             
           ],
@@ -68,6 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Second page',
         child: const Text('2'),
       ),
+      
     );
   }
 }
