@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
+import 'screens/second_page.dart';
+import 'screens/third_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,11 +21,20 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Navigation'),
-      // home: const SecondPage(),
-      // routes: <>{
-
-      // },
+      routes: <String,WidgetBuilder>{
+          '/third':((context) => ThirdPage()),
+          '/second':((context) => SecondPage())
+      },
     );
   }
 }
 
+
+
+//learning outcomes
+
+//navigate by push and pop
+
+//navigate by routes
+
+//ListView scroll
