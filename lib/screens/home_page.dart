@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:stu_management/screens/NetworkRequest.dart';
 import 'package:stu_management/screens/second_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -72,6 +73,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pushNamed("/fifth");
               },
             ),
+                        Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: RaisedButton(
+                  child: Text('CLICK ME'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NetworkRequest()),
+                    );
+                  }),
+            )
           ])
             
           ],
